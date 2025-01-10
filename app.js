@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-const passport = require('passport');
 const socket = require('socket.io');
 const expressSession = require('express-session');
 const http = require('http');
-const db = require('./config/mongoose-connection');
+const passport = require('passport');
+const db = require('./lib/mongoose-connection');
 
 const server = http.createServer(app);
 const io = server();
